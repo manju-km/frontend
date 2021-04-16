@@ -1,0 +1,50 @@
+body{
+    width:100px;
+    height:100px;
+    background-color:#f0f0f0;
+    
+}
+#header{
+    margin:24px 24px 36px 24px;
+    background-color: #ffffff;
+    height: 110px;
+    width:1470px;
+}
+.image-left{
+    margin-top:20px;
+    margin-left: 12px;
+    margin-bottom: 12px;
+    float: left;
+    border-radius:10px;
+    }
+div .name-right{
+    float: right;
+}
+div .name-right h1 {
+    margin-left: 20px;
+    font-family: 'Frank Ruhl Libre',serif;
+    font-style:bold;
+    font-size: 24px;
+    padding:1px;
+    color:#464a56;
+}
+div .name-right p{
+    margin-left:20px;
+    color:#999292;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+div .name-right h1, div .name-right p{
+    margin-top: 4px;
+    line-height: 5px;
+    
+}
+div  span{
+    color:#464a56;
+}
+div .name-right p .fa-smile-o{
+    background-color:yellow;
+    color:black;
+    border-radius: 25px;
+}
