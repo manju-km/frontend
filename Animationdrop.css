@@ -1,0 +1,64 @@
+body{
+    background-color: #111;
+    margin:0;;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    cursor: pointer;
+    position:relative;
+}
+.container::before{
+    content:"";
+    position:absolute;
+    width:35px;
+    height:35px;
+    top:-125px;
+    left:50%;
+    border-radius: 0 100% 100% 100%;
+    
+}
+.grayscale{
+    position: relative;
+    background-image: url("./images/girl1.jpg");
+    width:300px;
+    height: 400px;
+    filter:grayscale(1);
+    background-size: cover;
+    background-position:center;
+    border-radius: 50%;
+}
+.colorful{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/girl1.jpg");
+    background-size: cover;
+    background-position:center;
+    clip-path: circle(0 at 50% 0);
+    transition: all 0.7s;
+
+}
+.container:hover .colorful{
+    transition-delay: 0.10s;
+    clip-path: circle(800px at 50% 0);
+    }
+    .container:hover::before{
+        animation: drop 0.4s eas-in;
+
+    }
+    @keyframes drop{
+        from{
+            opacity: 0;
+
+        }
+        to{
+            opacity: 1;
+            transform: translate(-50%,125px) rotate(45deg);
+        }
+    }
