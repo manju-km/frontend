@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    min-height: 100vh;
+    background-color:#c7c6c6;
+    
+}
+.flex{
+    width:100%;
+    height: 100vh;
+    display: flex;
+     gap:10px;
+    justify-content: center;
+    align-items: center;
+}
+:is(.card,.card1){
+    width:15%;
+    height:40vh;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.4);
+    transition: background 0.8s;
+    
+}
+
+.card{
+    background-image: url(./images/img12.jpg);
+    background-size:150px;
+    background-position:center;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+.card1{
+    background-image: url(./images/pexels-kira-schwarz-6898885.jpg);
+    background-size:150px;
+    background-position:center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+:is(.card,.card1):hover{
+background-size: 200px;
+background-position:left center ;
+}
+
+:is(.card,.card1)::before{
+    content: "";
+    position: absolute;
+    /* shortcut for position left,right,top,bottom */
+    inset: 2px;    
+    border-radius: 15px;
+    border:1px solid #f6f6f6;
+    opacity:0;
+    transition:opacity 0.8s;
+}
+
+:is(.card,.card1):hover::before{
+    opacity: 1;
+}
+
+:is(.card,.card1) span{
+    position:absolute;
+    bottom:15px;
+    left:10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f6f6f6;
+    font-weight: bolder;
+    font-size:15px;
+    text-shadow: 0 5px 5px #111;
+    opacity:0;
+    transition: all 0.8s;
+    transform: translatey(10px);
+}
+
+:is(.card,.card1):hover span{
+    opacity: 1;
+    transition: translatey(0);
+}
+
+.social-media{
+    padding: 0;
+    list-style: none;
+    top:15%;
+    left:5px;
+    position: absolute;
+    opacity: 0;
+    transition: all 0.8s;
+}
+
+.social-media li:not(:last-child){
+    margin-bottom: 2px;
+}
+
+.social-media li a{
+    color:#f6f6f6;
+    font-size: 10px;
+}
+:is(.card,.card1):hover .social-media{
+    opacity: 1;
+}
+
