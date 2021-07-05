@@ -13,11 +13,16 @@ body{
 .container::before{
     content:"";
     position:absolute;
-    width:35px;
-    height:35px;
-    top:-125px;
+    width:40px;
+    height:40px;
+    bottom:100px;
     left:50%;
     border-radius: 0 100% 100% 100%;
+    transform: translatex(-50%) rotate(45deg);
+    background-color: #1b90fd;
+    background-image: linear-gradient(#2fe0fe,#1b90fd);
+    opacity:0;
+    box-shadow: 100px 100px 100px rgba(47,224,254,0.2);
     
 }
 .grayscale{
@@ -42,16 +47,18 @@ body{
     background-position:center;
     clip-path: circle(0 at 50% 0);
     transition: all 0.7s;
+    border-radius: 15px 15px;
 
 }
 .container:hover .colorful{
     transition-delay: 0.10s;
     clip-path: circle(800px at 50% 0);
+    
+   
     }
     .container:hover::before{
         animation: drop 0.4s eas-in;
-
-    }
+      }
     @keyframes drop{
         from{
             opacity: 0;
@@ -60,5 +67,6 @@ body{
         to{
             opacity: 1;
             transform: translate(-50%,125px) rotate(45deg);
+           
         }
     }

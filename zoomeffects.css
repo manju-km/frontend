@@ -28,3 +28,125 @@ body{
     border-color: #fff;
     z-index:1;
 }
+/* .nav-list{
+    position: relative;
+    height:50px;
+    right:50px;
+    width: 0px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.nav-list.active{
+    width:400px;
+}
+.nav-list ul {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+} 
+.nav-list ul li {
+    list-style: none;
+}
+.nav-list ul li a {
+    text-decoration: none;
+    height: 50px;
+    line-height: 50px;
+    display:inline-block;
+    font-size: 20px;
+    padding: 0 15px;
+    letter-spacing: 2px;
+    color:#fff;
+    
+}
+.nav-list ul li a:hover {
+    border-bottom: 1px solid white;
+}
+.hotelname{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color: #fff;
+    font-size: 25px;
+    border-bottom: 1px solid blue;
+
+}
+section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+    font-size: 20px;
+}
+@media (max-width:750px) {
+    /* #toggle{
+        position: absolute;
+        top:0;
+        right: 0;
+        width:60px;
+        height: 60px;
+        background-color: #fff;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #toggle::before{
+        content: '';
+        position: absolute;
+        width:28px;
+        height: 2px;
+        background-color: #111;
+        transform: translateY(-5px);
+        transition: 0.2s;
+    }
+    #toggle::after{
+        content: '';
+        position: absolute;
+        width:28px;
+        height: 2px;
+        background-color: #111;
+        transform: translateY(5px);
+        transition: 0.2s;
+    }
+    #toggle.active::before{
+        transform: translateY(0px) rotate(45deg);
+    }
+    #toggle.active::after{
+        transform: translateY(0px) rotate(-45deg);
+    }
+    #toggle.active{
+        background:rgb(165, 47, 47);
+        
+    } */
+    /* #toggle{
+        position: absolute;
+        top:0;
+        right: 0;
+        width:50px;
+        height: 50px;
+        background-color: #fff;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #toggle::before{
+        content: '\f0c9';
+        font-family: "Font Awesome 5 Free" ;font-weight: 900;
+
+        
+    }
+    #toggle::after{
+        content: '';
+        position: absolute;
+        width:28px;
+        height: 2px;
+        background-color: #111;
+        transform: translateY(5px);
+        transition: 0.2s;
+    }
+} */ */

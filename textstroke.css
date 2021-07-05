@@ -1,0 +1,26 @@
+
+body{
+    width:100%;
+    height: 100vh;
+}
+    svg{
+    background: #B4161B;
+    overflow: hidden;
+}
+svg text{
+    font-size: 4rem;
+    stroke-width: 3px;
+    fill:transparent;
+    stroke: #A77B06;
+    letter-spacing:2px;
+    animation:texts 7s infinite alternate;
+}
+@keyframes texts{
+0%{
+    stroke-dasharray: 0 70%;
+}
+100%{
+    stroke-dasharray: 50% 0;
+    stroke-dashoffset: 10%;
+}
+}
