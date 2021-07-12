@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600&display=swap');
+body{
+    background: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    height: 100vh;
+   
+}
+.outer{
+    position: relative;
+    width: 250px;
+    height: 350px;
+    background: #262626;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+.outer::before{
+    content: '';
+    position: absolute;
+    top:0;
+    right: 35px;
+    width:350px;
+    height: 35px;
+    transition: 1.6s;
+    background: rgba(253, 187, 45, .5);
+    transform: rotate(-45deg)translate(0,-100px);
+}
+.outer:hover::before{
+    animation: shine 1.7s;
+}
+@keyframes shine{
+    100%{
+        transform: rotate(-45deg)translate(0,400px);
+    }
+}
+.inner{
+    width:245px;
+    height: 345px;
+    background: #121212;
+    border-radius: 9px;
+    z-index: 1;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow:hidden;
+    text-align: center;
+    box-sizing: border-box;
+    padding:0.7rem;
+}
+h1{
+    font-family: "Montserrat";
+    font-size:35px;
+    font-weight:600;
+    margin-bottom:5px;
+}
+.one{
+    font-family: "Montserrat";
+    font-size:20px;
+    font-weight:100;
+    margin-bottom: 5px;
+    letter-spacing: 4px;
+}
+.outer .one:hover{
+color:#cadd2d;
+}
+.two{
+    font-family: "Montserrat";
+    font-size:15px;
+    font-weight:300;
+    text-align:center;
+    margin-top: 10px;
+}
